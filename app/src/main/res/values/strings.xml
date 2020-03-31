@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">perCalender</string>
+    <string name="pick_date">انتخاب تاریخ</string>
+    <string name="choose_folder">انتخاب پوشه</string>
+    <string name="file_name">File name</string>
+    <string name="file_path">File path</string>
+    <string name="no_files_modified_on_this_date">فایلی در این تاریخ در این پوشه ایجاد نشده است</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="ok">باشه</string>
+    <string name="cancel">بیخیال</string>
+    <string name="today">امروز</string>
+</resources>

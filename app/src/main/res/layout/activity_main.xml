@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    android:background="#FFEFE2" >
+
+    <Button
+        android:id="@+id/datePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/widget_backgrounds"
+        android:text="@string/pick_date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/datePickerButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/datePickerButton"
+        android:layout_alignTop="@+id/datePickerButton"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_backgrounds"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/folderChooserButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/datePickerButton"
+        android:layout_marginTop="7dp"
+        android:padding="10dp"
+        android:background="@drawable/widget_backgrounds"
+        android:text="@string/choose_folder"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/folderPathTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/datePickerButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/folderChooserButton"
+        android:layout_alignTop="@+id/folderChooserButton"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/widget_backgrounds"
+        android:padding="3dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/filesListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/folderPathTextView"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/list_view_background"/>
+
+
+</RelativeLayout>
